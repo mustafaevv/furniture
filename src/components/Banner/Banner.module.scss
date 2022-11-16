@@ -1,0 +1,18 @@
+.banner {
+  background: url(../../images/banner.png) no-repeat center/cover;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  z-index: -10;
+
+  &__position {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(14px);
+    height: 100%;
+    width: 600px;
+    top: 0;
+    left: 0;
+    z-index: -5;
+  }
+}
