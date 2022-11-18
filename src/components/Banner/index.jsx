@@ -2,7 +2,7 @@ import React from "react";
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 
 import Container from "../../layout/Container";
-import icons from "./bannerITems";
+import icons from "../Header/headerITems";
 
 import classes from "./Banner.module.scss";
 

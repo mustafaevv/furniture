@@ -3,17 +3,17 @@
   height: 100vh;
   padding: 45px 0;
   position: relative;
-  z-index: -10;
+  z-index: 10;
 
   &__position {
     position: absolute;
     background: rgba(255, 255, 255, 0.12);
     backdrop-filter: blur(14px);
     height: 100%;
-    width: 600px;
+    width: 40%;
     top: 0;
     left: 0;
-    z-index: -5;
+    z-index: -1;
   }
 
   &__container {
@@ -43,5 +43,64 @@
     font-size: 18px;
     color: #ffffff;
     text-decoration: none;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding-bottom: 30px;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 88px;
+    max-width: 90vh;
+    color: #ffffff;
+    margin-top: auto;
+    margin-bottom: 0.3em;
+  }
+
+  &__text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #ffffff;
+    max-width: 50vh;
+    margin-bottom: 4em;
+  }
+
+  &__button {
+    max-width:200px;
+    width: 100%;
+    background: #f1ac02;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 50px;
+    color: #ffffff;
+    border: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+
+    & svg{
+      font-size: 20px;
+      margin-left: 10px;
+    }
+  }
+  &__iconsList{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-top: auto;
+    gap: 2em;
+  }
+  
+  &__icon{
+    color: #fff;
+    font-size: 20px;
   }
 }
